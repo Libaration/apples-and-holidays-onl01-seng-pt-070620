@@ -81,13 +81,11 @@ def all_supplies_in_holidays(holiday_hash)
   v.each do |khash,vhash|
 
     puts "  " + khash.to_s.split("_").each{|thing| thing.capitalize!}.join(" ") + ": #{vhash.join(", ")}"
-  
+
   end
 end
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  # return an array of holiday names (as symbols) where supply lists
-  # include the string "BBQ"
 
 end
