@@ -78,9 +78,9 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.collect do |k,v|
     puts "#{k}:".capitalize
-    binding.pry
-    v.collect do |khash,vhash|
 
+    v.collect do |khash,vhash|
+binding.pry
       ##next if k == :winter
 
 
