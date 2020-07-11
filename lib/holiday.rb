@@ -77,13 +77,13 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.collect do |k,v|
-      puts "#{k}:".capitalize
-      v.each do |khash,vhash|
-        puts "  " + khash.to_s.capitalize + ": #{vhash.join(", ")}"
+  puts "#{k}:".capitalize
+  v.each do |khash,vhash|
+    puts "   " + khash.to_s.capitalize.gsub("_"," ") + ": #{vhash.join(", ")}"
 
-      end
-    end
   end
+end
+end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
