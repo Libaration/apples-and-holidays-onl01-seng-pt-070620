@@ -94,7 +94,7 @@ def all_holidays_with_bbq(holiday_hash)
 
         myVar += khash
       end
-myVar
     end
+    myVar
   end
 end
