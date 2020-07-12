@@ -93,6 +93,7 @@ def all_holidays_with_bbq(holiday_hash)
       if vhash == "BBQ"
 
         myVar += khash
+        binding.pry
       end
     end
   end
