@@ -87,6 +87,7 @@ end
 end
 
 def all_holidays_with_bbq(holiday_hash)
+  myVar = ""
   holiday_hash.collect do |k,v|
     v.collect do |khash,vhash|
       if vhash == "BBQ"
