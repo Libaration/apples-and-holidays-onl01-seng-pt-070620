@@ -87,14 +87,17 @@ end
 end
 
 def all_holidays_with_bbq(holiday_hash)
-
+myArray = []
   holiday_hash.collect do |k,v|
     v.collect do |khash,vhash|
       if vhash.include? "BBQ"
 
-        khash.reject {|thing| thing.to_s.empty?}
+      myArray << khash
 
       end
+
     end
+
   end
+  myArray -= [nil, '']
 end
