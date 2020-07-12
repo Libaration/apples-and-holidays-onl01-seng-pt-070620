@@ -92,7 +92,7 @@ def all_holidays_with_bbq(holiday_hash)
     v.collect do |khash,vhash|
       if vhash == "BBQ"
 
-
+        binding.pry
 
       end
     end
