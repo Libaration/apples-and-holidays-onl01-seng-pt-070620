@@ -92,7 +92,7 @@ def all_holidays_with_bbq(holiday_hash)
     v.collect do |khash,vhash|
       if vhash.include? "BBQ"
 
-        khash
+        khash.reject {|thing| thing.to_s.empty?}
 
       end
     end
